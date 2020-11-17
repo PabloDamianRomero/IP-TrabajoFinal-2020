@@ -1,7 +1,10 @@
 <?php
 /******************************************
-*Completar:
-* NOMBRE Y APELLIDOS - LEGAJOS
+
+* NATALIA PAMELA MORA VÁSQUEZ - FAI 2151
+* MATIAS FEDERICO PERALTA MACRI - FAI 3077
+* PABLO DAMIAN ROMERO - FAI 1652
+
 ******************************************/
 
 
@@ -23,7 +26,7 @@ function cargarPalabras(){
 }
 
 /**
-* /*>>> completar comentario <<<*/
+* /*>>> completar comentario <<<
 * 
 */
 function cargarJuegos(){
@@ -108,7 +111,7 @@ function existeLetra(/*>>> Completar parámetros <<<*/ ){
 
 /**
 * Obtener indice aleatorio
-* /*>>> Completar documentacion <<<*/
+* /*>>> Completar documentacion <<<
 */
 function indiceAleatorioEntre($min,$max){
     $i = rand($min,$max); // /*>>> documente qué hace la función rand según el manual php.net en internet <<<*/
@@ -143,7 +146,7 @@ function palabraDescubierta($coleccionLetras){
 }
 
 /**
-* /*>>> Completar documentacion <<<*/
+* /*>>> Completar documentacion <<<
 */
 function solicitarLetra(){
     $letraCorrecta = false;
