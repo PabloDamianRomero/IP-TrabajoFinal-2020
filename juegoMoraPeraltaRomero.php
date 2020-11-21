@@ -30,7 +30,7 @@ function cargarPalabras()
 
 /**
  * Punto 2)
- * genera un arreglo de juegos jugados 
+ * genera un arreglo de juegos jugados
  * /*>>> (COMPLETADO)completar comentario <<<
  *
  */
@@ -48,14 +48,20 @@ function cargarJuegos()
 }
 
 /**
+ * Punto 3)
  * a partir de la palabra genera un arreglo para determinar si sus letras fueron o no descubiertas
  * @param string $palabra
  * @return array
  */
 function dividirPalabraEnLetras($palabra)
 {
-
- /*>>> Completar para generar la estructura de datos b) indicada en el enunciado.
+ $coleccionLetras = str_split($palabra);
+ $longitudPalabra = strlen($palabra);
+ for ($i = 0; $i < $longitudPalabra; $i++) {
+  $coleccionLetras[$i] = array("letra" => str_split($palabra)[$i], "descubierta" => false);
+ }
+ return $coleccionLetras;
+ /*>>> (COMPLETADO) Completar para generar la estructura de datos b) indicada en el enunciado.
 recuerde que los string pueden ser recorridos como los arreglos.  <<<*/
 
 }
@@ -130,6 +136,7 @@ function existeLetra($coleccionLetras, $letra)
 }
 
 /**
+ * Punto 7) (Implementado en cargarNuevaPalabra)
  * Solicita los datos correspondientes a un elemento de la coleccion de palabras: palabra, pista y puntaje.
  * Internamente la función también verifica que la palabra ingresada por el usuario no exista en la colección de palabras.
  * @param array $coleccionPalabras
@@ -138,16 +145,20 @@ function existeLetra($coleccionLetras, $letra)
 /*>>> Completar la interfaz y cuerpo de la función. Debe respetar la documentación <<<*/
 
 /**
+ * Punto 8)
  * Obtener indice aleatorio
- * /*>>> Completar documentacion <<<
+ * @param int $min
+ * @param int $max
+ * @return int devuelve un indice entero
  */
 function indiceAleatorioEntre($min, $max)
 {
- $i = rand($min, $max); // /*>>> documente qué hace la función rand según el manual php.net en internet <<<*/
+ $i = rand($min, $max); // obtener un número aleatorio entre $min y $max (incluidos)
  return $i;
 }
 
 /**
+ * Punto 9)
  * solicitar un valor entre min y max
  * @param int $min
  * @param int $max
