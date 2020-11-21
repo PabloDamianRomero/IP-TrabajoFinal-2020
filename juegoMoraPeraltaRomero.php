@@ -219,6 +219,7 @@ function destaparLetra($coleccionLetras, $letra)
 }
 
 /**
+ * Punto 13)
  * obtiene la palabra con las letras descubiertas y * (asterisco) en las letras no descubiertas. Ejemplo: he**t*t*s
  * @param array $coleccionLetras
  * @return string  Ejemplo: "he**t*t*s"
@@ -233,6 +234,7 @@ function stringLetrasDescubiertas($coleccionLetras)
 }
 
 /**
+ * Punto 14)
  * Desarrolla el juego y retorna el puntaje obtenido
  * Si descubre la palabra se suma el puntaje de la palabra más la cantidad de intentos que quedaron
  * Si no descubre la palabra el puntaje es 0.
