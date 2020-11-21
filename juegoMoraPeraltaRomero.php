@@ -172,6 +172,7 @@ function solicitarIndiceEntre($min, $max)
 }
 
 /**
+ * Punto 10)
  * Determinar si la palabra fue descubierta, es decir, todas las letras fueron descubiertas
  * @param array $coleccionLetras
  * @return boolean
@@ -183,7 +184,8 @@ function palabraDescubierta($coleccionLetras)
 }
 
 /**
- * /*>>> Completar documentacion <<<
+ * Punto 11)
+ * valida que un String ingresado tenga un único caracter
  */
 function solicitarLetra()
 {
@@ -203,6 +205,7 @@ function solicitarLetra()
 }
 
 /**
+ * Punto 12)
  * Descubre todas las letras de la colección de letras iguales a la letra ingresada.
  * Devuelve la coleccionLetras modificada, con las letras descubiertas
  * @param array $coleccionLetras
