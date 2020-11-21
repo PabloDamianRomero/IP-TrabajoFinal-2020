@@ -268,6 +268,7 @@ function jugar($coleccionPalabras, $indicePalabra, $cantIntentos)
 }
 
 /**
+ * Punto 15)
  * Agrega un nuevo juego al arreglo de juegos
  * @param array $coleccionJuegos
  * @param int $ptos
@@ -281,6 +282,7 @@ function agregarJuego($coleccionJuegos, $puntos, $indicePalabra)
 }
 
 /**
+ * Punto 16)
  * Muestra los datos completos de un registro en la colección de palabras
  * @param array $coleccionPalabras
  * @param int $indicePalabra
@@ -293,6 +295,7 @@ function mostrarPalabra($coleccionPalabras, $indicePalabra)
 }
 
 /**
+ * Punto 17)
  * Muestra los datos completos de un juego
  * @param array $coleccionJuegos
  * @param array $coleccionPalabras
