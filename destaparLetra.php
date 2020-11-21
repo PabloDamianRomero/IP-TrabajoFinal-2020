@@ -10,5 +10,5 @@
 function destaparLetra($coleccionLetras, $letra)
 {
 
- /*>>> Completar el cuerpo de la función, respetando lo indicado en la documentacion <<<*/
+ 
 }
