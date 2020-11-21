@@ -1,6 +1,7 @@
 <?php
 /**
  * Punto 7)
+ * 
  * Solicita los datos correspondientes a un elemento de la coleccion de palabras: palabra, pista y puntaje.
  * Internamente la función también verifica que la palabra ingresada por el usuario no exista en la colección de palabras.
  * @param array $coleccionPalabras
