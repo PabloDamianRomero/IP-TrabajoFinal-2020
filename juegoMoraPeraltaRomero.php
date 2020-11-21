@@ -22,9 +22,6 @@ function cargarPalabras()
  $coleccionPalabras[4] = array("palabra" => "libelula", "pista" => "insecto volador", "puntosPalabra" => 8);
  $coleccionPalabras[5] = array("palabra" => "labrador", "pista" => "raza de perro", "puntosPalabra" => 7);
  $coleccionPalabras[6] = array("palabra" => "bhaskara", "pista" => "formula para determinar raices de un polinomio", "puntosPalabra" => 10);
-
- /*>>> (COMPLETADO)Agregar al menos 4 palabras más <<<*/
-
  return $coleccionPalabras;
 }
 
@@ -74,7 +71,6 @@ recuerde que los string pueden ser recorridos como los arreglos.  <<<*/
 function seleccionarOpcion()
 {
  // $int $opcion
- do {
   echo "--------------------------------------------------------------\n";
   echo "\n ( 1 ) Jugar con una palabra aleatoria";
   echo "\n ( 2 ) Jugar con una palabra elegida";
@@ -84,6 +80,7 @@ function seleccionarOpcion()
   echo "\n ( 6 ) Mostrar la información completa del primer juego que supere un puntaje indicado por el usuario";
   echo "\n ( 7 ) Mostrar la lista de palabras ordenada por puntaje";
   echo "\n ( 8 ) Salir";
+  do {
   echo "\n Indique una opción válida:";
   $opcion = trim(fgets(STDIN));
  } while (($opcion < 1) || ($opcion > 8));
