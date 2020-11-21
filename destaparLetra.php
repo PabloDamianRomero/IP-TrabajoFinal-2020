@@ -9,6 +9,23 @@
  */
 function destaparLetra($coleccionLetras, $letra)
 {
-
- 
+    $longitudArreglo = count($coleccionLetras);
+    for($i=0;$i<$longitudArreglo;$i++){
+        if($coleccionLetras[$i]["letra"]==$letra){
+            $coleccionLetras[$i]["descubierta"] = true;
+        }
+    }
+ return $coleccionLetras;
 }
+
+
+$coleccionLetras    = array();
+$coleccionLetras[0] = array("letra" => "p", "descubierta" => false);
+$coleccionLetras[1] = array("letra" => "a", "descubierta" => false);
+$coleccionLetras[2] = array("letra" => "p", "descubierta" => false);
+$coleccionLetras[3] = array("letra" => "a", "descubierta" => false);
+
+
+$l = "a";
+$r = destaparLetra($coleccionLetras, $l);
+print_r($r);
