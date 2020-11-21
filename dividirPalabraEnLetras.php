@@ -17,5 +17,4 @@ function dividirPalabraEnLetras($palabra)
 echo "ingrese una palabra ";
 $palabra = trim(fgets(STDIN));
 $letras  = dividirPalabraEnLetras($palabra); //para probar la funcion
-
 /** La función toma en cuenta los espacios de la palabra. Verificar si se permite */
