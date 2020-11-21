@@ -1,6 +1,7 @@
 <?php
 /**
  * Punto 10)
+ * 
  * Determinar si la palabra fue descubierta, es decir, todas las letras fueron descubiertas
  * @param array $coleccionLetras
  * @return boolean
