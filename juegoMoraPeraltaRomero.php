@@ -1,5 +1,6 @@
 <?php
 /******************************************
+ * Grupo 2:
  * NATALIA PAMELA MORA VÁSQUEZ - FAI 2151
  * MATIAS FEDERICO PERALTA MACRI - FAI 3077
  * PABLO DAMIAN ROMERO - FAI 1652
@@ -145,7 +146,7 @@ function cargarNuevaPalabra($coleccionPalabras)
  $longitudArreglo = count($coleccionPalabras);
  do {
   echo "Ingrese la palabra: ";
-  $nuevaPalabra = strlower(trim(fgets(STDIN))); //convierte la palabra a minuscula 
+  $nuevaPalabra = strlower(trim(fgets(STDIN))); //convierte la palabra a minuscula
   $coincidencia = existePalabra($coleccionPalabras, $nuevaPalabra);
   if ($coincidencia == false) {
    echo "Ingrese pista: ";
@@ -391,10 +392,10 @@ function indiceMayorPunt($coleccionJuegos)
  //Boolean $bandera
  $puntuacion = 0;
  $n          = count($coleccionJuegos);
- for ($i=0; $i<$n; $i++) {
+ for ($i = 0; $i < $n; $i++) {
   if ($coleccionJuegos[$i]["puntos"] > $puntuacion) {
-   $indice  = $i;
-   $puntuacion=$coleccionJuegos[$i]["puntos"];
+   $indice     = $i;
+   $puntuacion = $coleccionJuegos[$i]["puntos"];
   }
  }
  return $indice;
