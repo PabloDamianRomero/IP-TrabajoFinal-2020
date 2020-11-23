@@ -468,34 +468,45 @@ function dibujar($valor)
     $cadena = "";
     $cadena = $cadena . "+-----+\n";
     $cadena = $cadena . "|     |\n";
-    switch($valor){
+    switch ($valor) {
         case 6:
             $cadena = $cadena . "|     O\n";
-        break;
+            $cadena = $cadena . "|\n";
+            $cadena = $cadena . "|\n";
+            $cadena = $cadena . "|";
+            break;
         case 5:
             $cadena = $cadena . "|     O\n";
             $cadena = $cadena . "|    /\n";
-        break;
+            $cadena = $cadena . "|\n";
+            $cadena = $cadena . "|";
+            break;
         case 4:
             $cadena = $cadena . "|     O\n";
             $cadena = $cadena . "|    /|\n";
-        break;
+            $cadena = $cadena . "|\n";
+            $cadena = $cadena . "|";
+            break;
         case 3:
             $cadena = $cadena . "|     O\n";
             $cadena = $cadena . "|    /|)\n";
-        break;
+            $cadena = $cadena . "|\n";
+            $cadena = $cadena . "|";
+            break;
         case 2:
             $cadena = $cadena . "|     O\n";
             $cadena = $cadena . "|    /|)\n";
             $cadena = $cadena . "|    / \n";
-        break;
+            $cadena = $cadena . "|";
+            break;
         case 1:
             $cadena = $cadena . "|     O\n";
             $cadena = $cadena . "|    /|)\n";
             $cadena = $cadena . "|    / )\n";
-        break;
+            $cadena = $cadena . "|";
+            break;
     }
-    $cadena = $cadena . "|\n";
+    $cadena = $cadena . "\n---";
     echo $cadena;
 }
 
