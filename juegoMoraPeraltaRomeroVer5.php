@@ -145,8 +145,7 @@ function cargarNuevaPalabra($coleccionPalabras)
  $longitudArreglo = count($coleccionPalabras);
  do {
   echo "Ingrese la palabra: ";
-  $nuevaPalabra = trim(fgets(STDIN));
-  $nuevaPalabra = strtolower ($nuevaPalabra); //convierte la palabra a minuscula 
+  $nuevaPalabra = strlower(trim(fgets(STDIN))); //convierte la palabra a minuscula 
   $coincidencia = existePalabra($coleccionPalabras, $nuevaPalabra);
   if ($coincidencia == false) {
    echo "Ingrese pista: ";
