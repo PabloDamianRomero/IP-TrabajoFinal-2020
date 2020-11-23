@@ -442,20 +442,21 @@ function ordenarPal($coleccionPalabras){
 /************** PROGRAMA PRINCIAL *********/
 /******************************************/
 define("CANT_INTENTOS", 6); //Constante en php para cantidad de intentos que tendrá el jugador para adivinar la palabra.
-
+$coleccionPalabras = cargarPalabras();
 do {
     $opcion = seleccionarOpcion();
     switch ($opcion) { //
     case 1: //Jugar con una palabra aleatoria
-        $colPalabras = cargarPalabras();
-        $indice      = indiceAleatorioEntre(0, count($colPalabras) - 1);
-        $puntos      = jugar($colPalabras, $indice, CANT_INTENTOS);
+        $indice      = indiceAleatorioEntre(0, count($coleccionPalabras) - 1);
+        $puntos      = jugar($coleccionPalabras, $indice, CANT_INTENTOS);
         echo "\nPUNTAJE---->: " . $puntos . "\n";
         break;
     case 2: //Jugar con una palabra elegida
         $min = 0;
-        $max = count($coleccionPalabras);
+        $max = count($coleccionPalabras) - 1;
         $elegirPalabra = solicitarIndiceEntre($min, $max);
+        $puntos      = jugar($coleccionPalabras, $elegirPalabra, CANT_INTENTOS);
+        echo "\nPUNTAJE---->: " . $puntos . "\n";
         break;
     case 3: //Agregar una palabra al listado
         $nuevaPal = cargarNuevaPalabra($coleccionPalabras);
