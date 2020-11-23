@@ -536,13 +536,8 @@ do {
    break;
   case 4: //Mostrar la información completa de un número de juego
    $maximoJuego = count($coleccionJuegos) - 1;
-   echo "\nSeleccione un índice entre 0 y " . $maximoJuego . ": ";
-   $indiceJuego = trim(fgets(STDIN));
-   if (($indiceJuego >= 0) && ($indiceJuego <= $maximoJuego)) {
-    $infoJuego = mostrarJuego($coleccionJuegos, $coleccionPalabras, $indiceJuego);
-   } else {
-    echo "\nEl índice ingresado no corresponde con el rango permitido.\n";
-   }
+   $indiceJuego = solicitarIndiceEntre(0, $maximoJuego);
+   $infoJuego   = mostrarJuego($coleccionJuegos, $coleccionPalabras, $indiceJuego);
    break;
   case 5: //Mostrar la información completa del primer juego con más puntaje
    $indice = indiceMayorPunt($coleccionJuegos);
