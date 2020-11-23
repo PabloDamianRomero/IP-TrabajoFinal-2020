@@ -144,17 +144,18 @@ function cargarNuevaPalabra($coleccionPalabras)
  //Boolean $coincidencia
  $longitudArreglo = count($coleccionPalabras);
  do {
-  echo "\nIngrese la palabra: ";
+  echo "Ingrese la palabra: ";
   $nuevaPalabra = trim(fgets(STDIN));
+  $nuevaPalabra = strtolower ($nuevaPalabra); //convierte la palabra a minuscula 
   $coincidencia = existePalabra($coleccionPalabras, $nuevaPalabra);
   if ($coincidencia == false) {
-   echo "\nIngrese pista: ";
+   echo "Ingrese pista: ";
    $nuevaPista = strtolower(trim(fgets(STDIN)));
-   echo "\nIngrese puntaje: ";
+   echo "Ingrese puntaje: ";
    $nuevoPuntoPorPalabra                = trim(fgets(STDIN));
    $coleccionPalabras[$longitudArreglo] = array("palabra" => $nuevaPalabra, "pista" => $nuevaPista, "puntosPalabra" => $nuevoPuntoPorPalabra);
   } else {
-   echo "\nLa palabra ya existe";
+   echo "La palabra ya existe\n";
   }
  } while ($coincidencia == true);
  return $coleccionPalabras;
