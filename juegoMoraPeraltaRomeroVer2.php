@@ -449,7 +449,7 @@ do {
     case 1: //Jugar con una palabra aleatoria
         $colPalabras = cargarPalabras();
         $indice      = indiceAleatorioEntre(0, count($colPalabras) - 1);
-        $puntos      = jugar($colPalabras, $indice, "CANT_INTENTOS");
+        $puntos      = jugar($colPalabras, $indice, CANT_INTENTOS);
         echo "\nPUNTAJE---->: " . $puntos . "\n";
         break;
     case 2: //Jugar con una palabra elegida
