@@ -459,7 +459,7 @@ do {
         echo "\nPUNTAJE---->: " . $puntos . "\n";
         break;
     case 3: //Agregar una palabra al listado
-        $nuevaPal = cargarNuevaPalabra($coleccionPalabras);
+        $coleccionPalabras = cargarNuevaPalabra($coleccionPalabras);
         break;
     case 4: //Mostrar la información completa de un número de juego
         $infoJuego = mostrarJuego($coleccionJuegos, $coleccionPalabras, $indiceJuego);
