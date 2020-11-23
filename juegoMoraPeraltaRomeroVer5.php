@@ -391,12 +391,11 @@ function indiceMayorPunt($coleccionJuegos)
  //Boolean $bandera
  $puntuacion = 0;
  $n          = count($coleccionJuegos);
- $bandera    = true;
  $i          = 0;
- while ($i < $n && $bandera) {
+ while ($i < $n) {
   if ($coleccionJuegos[$i]["puntos"] > $puntuacion) {
    $indice  = $i;
-   $bandera = false;
+   $puntuacion=$coleccionJuegos[$i]["puntos"];
   }
   $i++;
  }
