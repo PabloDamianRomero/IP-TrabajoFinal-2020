@@ -1,5 +1,5 @@
 # IP-TrabajoFinal-2020
-Trabajo practico obligatorio. Materia: Introducción a la Programación. Año: 2020. Tema: Ahorcado. Lenguaje: php
+### Trabajo practico obligatorio. Materia: Introducción a la Programación. Año: 2020. Tema: Ahorcado. Lenguaje: php
 
 Integrantes (Grupo 2):
  * NATALIA PAMELA MORA VÁSQUEZ - FAI 2151
